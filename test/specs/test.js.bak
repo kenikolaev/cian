@@ -1,0 +1,12 @@
+import SearchPage from '../pageobjects/search.page.js';
+
+describe('search form', () => {
+    it('should deny access with wrong creds', () => {
+		SearchPage.open();
+		const PropertiesReader = require('properties-reader');
+		const prop = PropertiesReader('app.properties');
+
+				//call the getProperty method
+		console.log(prop.get('password')); //3000
+	});
+});
